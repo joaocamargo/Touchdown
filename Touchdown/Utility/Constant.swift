@@ -11,8 +11,9 @@ import SwiftUI
 
 let players: [Player] = Bundle.main.decode("player.json")
 let categories: [Category] = Bundle.main.decode("category.json")
-
-
+let products: [Product] = Bundle.main.decode("product.json")
+let brands: [Brand] = Bundle.main.decode("brand.json")
+let sampleProduct: Product = products[0]
 //Color
 
 let colorBackground: Color = Color("ColorBackground")
@@ -25,6 +26,8 @@ var gridLayout: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
 }
 //ux
+
+let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 //api
 
